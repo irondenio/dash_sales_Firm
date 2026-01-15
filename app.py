@@ -28,7 +28,7 @@ st.subheader("Auteur : Anthony DJOUMBISSI")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Adaptez si besoin : 200k pour Cloud (recommandé), 1M en local
-DATA_PATH = os.path.join(BASE_DIR, "data", "cosmetics_industrial_dataset.csv")
+DATA_PATH = os.path.join(BASE_DIR, "data", "cosmetics_industrial_dataset.csv.gz")
 
 @st.cache_data(show_spinner=False)
 def load_data(path: str) -> pd.DataFrame:
